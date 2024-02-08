@@ -69,7 +69,7 @@
         <h2 class="text-lg font-semibold text-gray-800">Patient Information</h2>
       </div>
       <div class="relative px-2 py-2">
-      <form class="space-y-4" method="POST" action="{{ route('patient.store') }}">
+      <form class="space-y-4" method="POST" action="{{ route('dashboard.store') }}">
        @csrf <!-- Adding CSRF token -->
        <div class="mb-4">
         <label for="sname" class="block text-sm font-medium text-gray-700">SurName</label>
@@ -114,12 +114,12 @@
   <label class="col-12 text-sm font-medium text-gray-700">Test Required</label>
 
   <!-- Checkbox 1 -->
-  <div class="col-3 mb-2">
+  <!-- <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="dDimerTest" name="testRequired[]" value="D-Dimer test" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="dDimerTest" class="ml-2 text-gray-700">D-Dimer test</label>
     </div>
-  </div>
+  </div> -->
 
   <!-- Checkbox 2 -->
   <div class="col-3 mb-2">
@@ -130,80 +130,80 @@
   </div>
 
   <!-- Checkbox 3 -->
-  <div class="col-3 mb-2">
+  <!-- <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="cti" name="testRequired[]" value="cti test" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="cti" class="ml-2 text-gray-700">Cardiac Troponin-I</label>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Checkbox 4 -->
+  <!-- Checkbox 4
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="HBA1C" name="testRequired[]" value="HBA1C(Glycated Hemoglobin)" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="HBA1C" class="ml-2 text-gray-700">HBA1C(Glycated Hemoglobin)</label>
     </div>
-  </div>
+  </div> -->
 
  
-
-          <!-- PCT Checkbox -->
+<!-- 
+           PCT Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="PCT" name="testRequired[]" value="PCT(Pro-calcitonin)" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="PCT" class="ml-2 text-gray-700">PCT(Pro-calcitonin)</label>
     </div>
-  </div>
+  </div> -->
 
  
 
 
-  <!-- FSH Checkbox -->
+  <!-- FSH Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="FSH" name="testRequired[]" value="FSH" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="FSH" class="ml-2 text-gray-700">Follicle stimulating hormone-FSH</label>
     </div>
-  </div>
+  </div> -->
 
   <!-- Estrogen Checkbox -->
-  <div class="col-3 mb-2">
+  <!-- <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="estrogen" name="testRequired[]" value="Estrogen" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="estrogen" class="ml-2 text-gray-700">Estrogen</label>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Prolactin Checkbox -->
+  <!-- Prolactin Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="prolactin" name="testRequired[]" value="Prolactin" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="prolactin" class="ml-2 text-gray-700">Prolactin</label>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Progesterone Checkbox -->
+  <!-- Progesterone Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="Progesterone" name="testRequired[]" value="Progesterone" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="Progesterone" class="ml-2 text-gray-700">Progesterone</label>
     </div>
-  </div>          
-          <!-- Testosterone Checkbox -->
+  </div>           -->
+          <!-- Testosterone Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="Testesterone" name="testRequired[]" value="Testesterone" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="Testesterone" class="ml-2 text-gray-700">Testesterone</label>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Luteinizing hormone Checkbox -->
+  <!-- Luteinizing hormone Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="Luteinizing hormone(LH)" name="testRequired[]" value="Luteinizing hormone(LH)" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="Luteinizing hormone(LH)" class="ml-2 text-gray-700">Luteinizing hormone(LH)</label>
     </div>
-  </div>
+  </div> -->
 
   <!-- Total T4 Checkbox -->
   <div class="col-3 mb-2">
@@ -253,13 +253,13 @@
     </div>
   </div>
 
-  <!-- NT-pro BNP Checkbox -->
+  <!-- NT-pro BNP Checkbox
   <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="NT-pro BNP" name="testRequired[]" value="NT-pro BNP" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="NT-pro BNP" class="ml-2 text-gray-700">NT-pro BNP</label>
     </div>
-  </div>
+  </div> -->
 
   <!-- CRP/hs/CRP Checkbox -->
   <div class="col-3 mb-2">
@@ -419,12 +419,12 @@
   </div>
 
   <!-- FOB Checkbox -->
-  <div class="col-3 mb-2">
+  <!-- <div class="col-3 mb-2">
     <div class="flex items-center ml-3 mr-4 mb-2">
       <input type="checkbox" id="FOB" name="testRequired[]" value="FOB(fecal occult blood)" class="rounded border-gray-300 text-indigo-500 focus:border-indigo-500 focus:ring-indigo-500">
       <label for="FOB" class="ml-2 text-gray-700">FOB(fecal occult blood)</label>
     </div>
-  </div>
+  </div> -->
 
   <!-- Ferritin Checkbox -->
   <div class="col-3 mb-2">
@@ -838,6 +838,10 @@
     </div>
   </div>
 </div>
+
+
+
+
 
 
 

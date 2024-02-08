@@ -40,7 +40,7 @@
 
             <div class="max-w-7xl mx-auto p-3 lg:p-3 mt-3">
                 <br>
-        <h1 class="text-4xl  text-gray-900 font-extrabold text-center mt-2">Friecca Pharmacy Laboratory Management System</h1>
+        <h1 class="text-4xl  text-gray-900 font-extrabold text-center mt-2">Fame Clinical Laboratory Management System</h1>
 
                 <div class="flex justify-center">
                 <img src="{{ Vite::asset('resources/images/logo.jpeg') }}" class="img-fluid rounded-circle" alt="Logo" style="width: 150px; height: 150px; border-radius: 50%;">
@@ -56,14 +56,14 @@
        
         <div class="flex-1 p-6">
             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vision Statement</h2>
-            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            <p class="mt-4 text-gray-100 dark:text-gray-400 text-sm leading-relaxed">
                 To be the forefront in providing accurate and timely diagnostic services, utilizing cutting-edge technology and compassionate care, ensuring healthier lives for our community.
             </p>
         </div>
         <!-- Core Values Column -->
         <div class="flex-1 mt-8 lg:mt-0 p-6">
             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Core Values</h2>
-            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            <p class="mt-4 text-gray-100 dark:text-gray-400 text-sm leading-relaxed">
                 At Friecca Clinic Laboratory, our core values revolve around innovation, integrity, empathy, and excellence. We strive to uphold the highest standards of quality, accuracy, and patient-centered care in every aspect of our services.
             </p>
         </div>
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                       Friecca Pharmacy
+                       Fame Clinical Laboratory
                     </div>
                 </div>
             </div>
